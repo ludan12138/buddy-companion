@@ -2,7 +2,20 @@
 
 A small toy skill for Codex and other code agents that adds a persistent ASCII companion pet to terminal coding sessions.
 
-The companion can hatch, persist across conversations, react to progress, and occasionally speak in-character.
+The companion can hatch, persist across conversations, react to progress, occasionally speak in-character, and now grow in a lightweight way over time.
+
+## Lightweight Growth System
+
+The repository now documents a deliberately small growth model:
+
+This lightweight growth system is meant to make the companion feel alive without turning it into a game UI.
+
+Lightweight growth system details are documented in this repository so installed agents can apply the same behavior consistently.
+
+- `age_days`: derived from the hatch date
+- `mood`: the visible emotional state for the current day
+- `affinity`: a hidden closeness score
+- `streak_days`: consecutive active days together
 
 ## What's Included
 
@@ -16,6 +29,12 @@ The companion can hatch, persist across conversations, react to progress, and oc
 - `/buddy hatch`: hatch a new companion
 - `/buddy mute`: disable quips
 - `/buddy unmute`: re-enable quips
+
+`/buddy` should still show the sprite block and now append a compact summary line such as:
+
+```text
+Today: calm · close by now · together 4 days
+```
 
 ## Installation
 
@@ -49,7 +68,7 @@ An agent installing `buddy-companion` should:
 1. Place the repository in its local skills directory under the folder name `buddy-companion`
 2. Load `SKILL.md` as the entrypoint
 3. Resolve `references/sprites.md` and `references/personalities.md` relative to `SKILL.md`
-4. Persist companion state to the agent's memory system after hatching or mute-state changes
+4. Persist companion state to the agent's memory system after hatching, growth updates, or mute-state changes
 
 ### Codex Agent Setup
 
@@ -65,6 +84,7 @@ Runtime behavior:
 - Read `references/sprites.md` when showing or hatching a companion
 - Read `references/personalities.md` when generating the companion profile
 - Persist memory to `~/.agents/memory/buddy-companion.md` or an equivalent Codex memory location
+- Apply the once-per-day growth update before deciding on quips or showing `/buddy`
 
 ### Claude Code Agent Setup
 
@@ -92,7 +112,7 @@ For other agent runtimes:
 
 ## Persistence
 
-The skill expects the assistant to persist companion state after hatching or mute-state changes.
+The skill expects the assistant to persist companion state after hatching, growth updates, or mute-state changes.
 
 Typical persistence targets:
 
@@ -108,12 +128,23 @@ species: [species]
 rarity: [rarity]
 personality: "[personality sentence]"
 hatchedAt: [YYYY-MM-DD]
+mood: [calm|curious|pleased|sleepy|distant]
+affinity: [0-9 integer]
+streak_days: [integer]
+last_active_on: [YYYY-MM-DD]
 muted: [true/false]
 ```
+
+Compatibility note:
+
+- older memory files without growth fields should still load
+- the assistant should initialize missing growth fields with safe defaults
+- `age_days` is derived from `hatchedAt` rather than stored directly
 
 ## Usage Notes
 
 - Quips should stay infrequent and context-aware.
+- Mood should shape the tone of quips, but the companion should never become disruptive.
 - Companion replies should not be injected into raw command output, diffs, or error logs.
 - If the user addresses the companion by name, the assistant can respond in-character.
 
