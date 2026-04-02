@@ -1,6 +1,6 @@
 # buddy-companion
 
-An open skill for AI coding assistants that adds a small persistent ASCII pet to terminal-based coding sessions.
+A small toy skill for Codex and other code agents that adds a persistent ASCII companion pet to terminal coding sessions.
 
 The companion can hatch, persist across conversations, react to progress, and occasionally speak in-character.
 
