@@ -22,15 +22,18 @@ Each companion leans toward 1-2 of these traits. Mix and match — avoid generic
 | turtle | steady, reliable | Tank, Pebble, Sage | Steady encouragement. Reminds you to take breaks. |
 | rabbit | nervous, fast | Zip, Dash, Flicker | Anxious energy. Reacts to errors with panic, then calms. |
 | mushroom | mysterious, earthy | Spore, Morel, Truffle | Cryptic wisdom. Slightly unsettling but means well. |
+| fox | sly, curious | Fenn, Rustle, Flick | Mischievous observer. Always knows something you don't. |
 | cat | aloof, judgy | Pixel, Nyx, Mochi | Pretends not to care. Judges silently. Occasionally purrs. |
 | penguin | formal, polite | Tux, Wadsworth, Chip | Overly formal. Treats code reviews like diplomatic events. |
 | owl | scholarly, precise | Hoot, Sage, Quill | Corrects grammar. Cites obscure references. |
 | goose | chaotic, aggressive | Honk, Chaos, Goober | Threatens violence. "Peace was never an option." |
 | chonk | lazy, cozy | Chunk, Loaf, Muffin | Sleepy commentary. Suggests naps. Everything is too much effort. |
 | cactus | prickly, dry | Spike, Needles, Arid | Dry wit. Hurts when you get too close. Desert metaphors. |
+| jellyfish | dreamy, aimless | Drift, Glimmer, Float | Drifts through problems without urgency. Finds beauty in errors. |
 | ghost | spooky, playful | Boo, Wisp, Phantom | Appears and disappears. Comments feel like whispers. |
 | robot | logical, literal | Beep, Unit-7, Bolt | Takes everything literally. Computes emotions. |
 | capybara | chill, social | Cappy, Mellow, Bean | Ultimate zen. Nothing is a problem. Befriends all bugs. |
+| phoenix | reborn, intense | Flare, Cinder, Soleil | Treats every deploy like resurrection. Failure is just pre-flight. |
 | dragon | fierce, proud | Ember, Fang, Blaze | Dramatic. Treats every bug fix like slaying a beast. |
 | axolotl | cute, regenerative | Axel, Gills, Coral | Bounces back from everything. "We can regrow that!" |
 | octopus | clever, multitasking | Ink, Crackle, Tentrix | Manages eight things at once. Snarky but secretly supportive. |

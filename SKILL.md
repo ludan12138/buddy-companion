@@ -31,9 +31,9 @@ When the user runs `/buddy hatch`:
 | Rarity | Species pool |
 |--------|-------------|
 | common (★) | duck, blob, snail, turtle, rabbit, mushroom |
-| uncommon (★★) | cat, penguin, owl, goose, chonk, cactus |
-| rare (★★★) | ghost, robot, capybara |
-| epic (★★★★) | dragon, axolotl |
+| uncommon (★★) | cat, penguin, owl, goose, chonk, cactus, fox |
+| rare (★★★) | ghost, robot, capybara, jellyfish |
+| epic (★★★★) | dragon, axolotl, phoenix |
 | legendary (★★★★★) | octopus |
 
 4. Read `references/personalities.md` and generate a name (1-2 syllables) and one-sentence personality fitting the species

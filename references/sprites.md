@@ -54,6 +54,14 @@ ASCII art for each companion species. Used during `/buddy` and `/buddy hatch` di
 
 ## Uncommon ★★
 
+### fox
+```
+  /\_/\
+ (·  ^  ·)
+  ( v v )
+   ^^ ^^
+```
+
 ### cat
 ```
    /\_/\
@@ -104,6 +112,14 @@ ASCII art for each companion species. Used during `/buddy` and `/buddy hatch` di
 
 ## Rare ★★★
 
+### jellyfish
+```
+   .~~~~.
+  (· oo ·)
+   `----´
+  )( )( )(
+```
+
 ### ghost
 ```
    .----.
@@ -129,6 +145,14 @@ ASCII art for each companion species. Used during `/buddy` and `/buddy hatch` di
 ```
 
 ## Epic ★★★★
+
+### phoenix
+```
+ *\    /*
+ (·  ·  ·)
+ ( /\/\ )
+  `----´
+```
 
 ### dragon
 ```
